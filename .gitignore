@@ -8,7 +8,7 @@ presentation/
 results/
 temp/
 backups/
-PROJECT_INDEX.md
+# PROJECT_INDEX.md
 
 *.jpg
 *.jpeg
@@ -65,21 +65,37 @@ tensor-gpu/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-Models y checkpoints
+# Models y checkpoints
 *.h5
 *.hdf5
+*.keras
 *.pkl
 *.pickle
 *.pt
 *.pth
 *.ckpt
 *.weights
+*.data-00000-of-00001
 models/
 checkpoints/
+tuner_dir/
 
-Logs
+# Keras Tuner (large checkpoint files)
+tuner_results/
+notebooks/tuner_results/
+notebooks/backups/
+
+# Reports
+reports/
+
+# Logs
 *.log
 logs/
+
+# Large binary files
+*.dll
+*.pyd
+*.so
 
 # Environment variables
 .env
@@ -87,3 +103,8 @@ logs/
 
 # OS
 Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Informe final (draft)
+informe_final/

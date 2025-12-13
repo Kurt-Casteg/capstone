@@ -90,7 +90,7 @@ This project presents a **systematic comparative analysis** of five deep learnin
 | Model | FLOPs (G) | Inference (ms) | Size (MB) | Accuracy/MParam |
 |-------|-----------|----------------|-----------|-----------------|
 | CNN Baseline | 2.26 | 27.09 | 15.21 | 74.19% |
-| **VGG19** | 39.04 | **24.62** | ~80 | 4.70% |
+| **VGG19** | 39.04 | **24.62** | 152.85 | 4.70% |
 | ResNet50 | 7.73 | 181.66 | 206.68 | 3.70% |
 | **EfficientNetB0** | **0.79** | 169.00 | **47.62** | **19.82%** |
 | ViT-B/16 | 35.23 | 328.15 | 332.07 | 1.07% |
