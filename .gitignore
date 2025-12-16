@@ -2,7 +2,7 @@
 images/
 dataset/
 data/
-docs/
+
 .claude/
 presentation/
 results/
@@ -85,9 +85,6 @@ tuner_results/
 notebooks/tuner_results/
 notebooks/backups/
 
-# Reports
-reports/
-
 # Logs
 *.log
 logs/
@@ -106,5 +103,3 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
-# Informe final (draft)
-informe_final/
