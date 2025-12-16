@@ -190,7 +190,7 @@ capstone/
 │
 ├── 📁 models/                        # Saved trained models
 │   ├── baseline_improved/            # CNN Baseline (.keras)
-│   ├── vgg/                          # VGG19 (.h5)
+│   ├── vgg/                          # VGG19 (.keras)
 │   ├── resnet50/                     # ResNet50 (.keras)
 │   ├── efficientnet/                 # EfficientNetB0 (.keras)
 │   └── vit/                          # ViT-B/16 (.keras)
@@ -487,14 +487,12 @@ All referenced papers are available in the `docs/` folder organized by topic.
 
 **Author:** Kurt Castro
 
-**Institution:** [University Name]
+**Institution:** Universidad del Desarrollo
 
 **Year:** 2025
 
 ---
 
 <div align="center">
-
-**⭐ If this project was helpful, please consider starring the repository ⭐**
 
 </div>
