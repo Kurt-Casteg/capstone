@@ -264,7 +264,7 @@ capstone/
 - Block6/Block7 fine-tuning
 - Compound scaling (depth × width × resolution)
 - MBConv blocks with Squeeze-and-Excitation
-- ⚠️ **Note:** This notebook required a separate environment with **TensorFlow 2.9.0** due to a [known bug in TF 2.10](https://github.com/keras-team/keras/issues/17268) that prevents saving the model configuration to JSON format. The training was executed in a downgraded environment and the resulting model was exported for compatibility.
+- ⚠️ **Note:** This notebook required a separate environment with **TensorFlow 2.9.0** due to a [known bug in TF 2.10](https://stackoverflow.com/questions/74681894/type-error-when-trying-to-save-model-in-tensorflow-python-getting-trace-unreco) that prevents saving the model configuration to JSON format. The training was executed in a downgraded environment and the resulting model was exported for compatibility.
 
 **06 - ViT-B/16:**
 - Frozen backbone (0.46% trainable parameters)
