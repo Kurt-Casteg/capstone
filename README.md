@@ -413,8 +413,8 @@ os.environ['PYTHONHASHSEED'] = str(SEED)
 | Component | Specification |
 |-----------|---------------|
 | GPU | NVIDIA GeForce GTX 1650 (4GB VRAM) |
-| CPU | Intel Core (8 cores) |
-| RAM | 16 GB |
+| CPU | AMD Ryzen 5 |
+| RAM | 32 GB |
 | OS | Windows 11 |
 
 ### 8.3 Training Times
