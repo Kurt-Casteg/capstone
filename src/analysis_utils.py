@@ -5,12 +5,10 @@ Analysis Utilities for Histopathology Classification
 This module provides utilities for model analysis, metrics calculation,
 and visualization.
 
-AUDIT FIXES:
+FIXES:
 - 7.2.1: Fixed get_flops() function
 - Improved error handling and documentation
 
-Author: Refactored by MLOps Engineer
-Date: November 2025
 """
 
 import tensorflow as tf
@@ -26,7 +24,7 @@ def get_flops(model, batch_size: int = 1, verbose: bool = True) -> int:
     """
     Calculate FLOPs (Floating Point Operations) for a Keras model.
     
-    AUDIT FIX 7.2.1: Fixed the original implementation that failed with:
+    FIX 7.2.1: Fixed the original implementation that failed with:
     "Warning: Could not calculate FLOPs: 'tuple' object has no attribute 'graph'"
     
     The issue was that convert_variables_to_constants_v2_as_graph returns a tuple
@@ -343,7 +341,7 @@ def plot_confusion_matrix(y_true, y_pred_classes, classes, figsize=(16, 7), save
 
 
 # =============================================================================
-# AUDIT FIX 7.3: STATISTICAL TESTS (Re-exported from statistical_tests.py)
+# FIX 7.3: STATISTICAL TESTS (Re-exported from statistical_tests.py)
 # =============================================================================
 
 # Import statistical tests for convenience

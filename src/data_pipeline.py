@@ -5,7 +5,7 @@ Refactored Data Pipeline for Histopathology Classification
 This module implements a robust, GPU-optimized data pipeline that addresses
 the critical issues identified in the technical audit (Section 7.1).
 
-AUDIT ISSUES RESOLVED:
+SUES RESOLVED:
 - 7.1.1: Implements Color Augmentation + Macenko Normalization
 - 7.1.3: Eliminates tf.py_function bottleneck using native TF operations
 - 3.2: Optimizes pipeline with .cache() and .prefetch(AUTOTUNE)
@@ -15,9 +15,6 @@ Pipeline Order (per README §6.1 CRITICAL requirement):
     Load → Resize → Macenko Normalization → Color Augmentation (HSV) → 
     Geometric Augmentation → Model-Specific Preprocessing
 
-Author: Refactored by MLOps Engineer
-Date: November 2025
-Compatibility: TensorFlow 2.10.1+
 """
 
 import tensorflow as tf
@@ -54,7 +51,7 @@ CLASS_NAMES = [
 
 
 # =============================================================================
-# AUDIT FIX 7.1.3: OPTIMIZED IMAGE LOADING FOR TIFF
+# FIX 7.1.3: OPTIMIZED IMAGE LOADING FOR TIFF
 # =============================================================================
 
 def _load_tiff_with_tfio(path: str, target_height: int, target_width: int) -> np.ndarray:
@@ -217,7 +214,7 @@ def convert_tiff_to_png_dataset(
 
 
 # =============================================================================
-# AUDIT FIX 7.1.1: MACENKO NORMALIZATION (TF-NATIVE)
+# FIX 7.1.1: MACENKO NORMALIZATION (TF-NATIVE)
 # =============================================================================
 
 class TFMacenkoNormalizer:
@@ -345,7 +342,7 @@ class TFMacenkoNormalizer:
 
 
 # =============================================================================
-# AUDIT FIX 7.1.1: COLOR AUGMENTATION (HSV-BASED)
+# FIX 7.1.1: COLOR AUGMENTATION (HSV-BASED)
 # =============================================================================
 
 @tf.function

@@ -30,9 +30,6 @@ USO:
         img_size=224
     )
 
-Autor: Capstone Project
-Fecha: Diciembre 2025
-Compatibilidad: TensorFlow 2.10.1+
 """
 
 import tensorflow as tf

@@ -11,9 +11,6 @@ AUDIT ISSUES RESOLVED:
 - 7.2.2: Mixed Precision configuration
 - 7.2.3: Standardized model building functions
 
-Author: Refactored by MLOps Engineer
-Date: November 2025
-Compatibility: TensorFlow 2.10.1+
 """
 
 import tensorflow as tf
@@ -31,7 +28,7 @@ from pathlib import Path
 
 
 # =============================================================================
-# AUDIT FIX 7.2.2: MIXED PRECISION CONFIGURATION
+# FIX 7.2.2: MIXED PRECISION CONFIGURATION
 # =============================================================================
 
 def configure_mixed_precision(enable: bool = True, verbose: bool = True) -> bool:
@@ -106,7 +103,7 @@ def get_mixed_precision_status() -> Dict[str, Any]:
 
 
 # =============================================================================
-# AUDIT FIX 7.1.2: EFFICIENTNET PREPROCESSING BUG FIX
+# FIX 7.1.2: EFFICIENTNET PREPROCESSING BUG FIX
 # =============================================================================
 
 def get_efficientnet_preprocessing() -> Callable:

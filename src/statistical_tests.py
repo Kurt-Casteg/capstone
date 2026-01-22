@@ -19,9 +19,6 @@ References:
 - Cohen, J. (1988). "Statistical Power Analysis for the Behavioral Sciences."
   Lawrence Erlbaum Associates.
 
-Author: MLOps Engineer
-Date: November 2025
-Compatibility: Python 3.8+, NumPy, SciPy
 """
 
 import numpy as np
@@ -31,7 +28,7 @@ import warnings
 
 
 # =============================================================================
-# AUDIT FIX 7.3.1: McNEMAR'S TEST
+# FIX 7.3.1: McNEMAR'S TEST
 # =============================================================================
 
 def mcnemar_test(
@@ -171,7 +168,7 @@ def mcnemar_test_multiple(
     """
     Perform McNemar's test for multiple model comparisons with Bonferroni correction.
     
-    AUDIT FIX 7.3.4: Implements Bonferroni correction for multiple comparisons.
+    FIX 7.3.4: Implements Bonferroni correction for multiple comparisons.
     
     Args:
         y_true: Ground truth labels
@@ -243,7 +240,7 @@ def mcnemar_test_multiple(
 
 
 # =============================================================================
-# AUDIT FIX 7.3.2: BOOTSTRAP CONFIDENCE INTERVALS
+# FIX 7.3.2: BOOTSTRAP CONFIDENCE INTERVALS
 # =============================================================================
 
 def bootstrap_ci(
